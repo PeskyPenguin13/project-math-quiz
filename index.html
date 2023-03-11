@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Math Quiz! Are you Ready?</title>
+        <title>Math Quiz</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -9,26 +9,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js.bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="quiz_game.css">
-
-    <script src="quiz_game_login.js"></script>
+    <script src="quiz_game_page.js"></script>
     </head>
     <body>
-        <center>
-            <h1>Math Quiz! Are you Ready?</h1>
-            <img src="https://cdn-icons-png.flaticon.com/512/3965/3965108.png" class="icon">
-            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-11 login_div">
-                <h2>Player 1: Login for the Quiz!!</h2>
-                <label>username</label>
-                <input id="p1input" class="form-control" placeholder="Enter Player 1's Name">
+        <h3 id="p1name">Penguin: </h3> <span id="p1score">0</span>
+        <br>
+        <h3 id="p2name">Panda: </h3> <span id="p2score">0</span>
+
+        <div class="container">
+            
+            <center>
+            <h2>Math Quiz!</h2>
+            <h3 id="Qturn">Q: Penguin</h3>
+            <h3 id="Aturn">A: Panda</h3>
+            <br>
+            <div id="output">
+                
             </div>
             <br>
-            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-11 login_div">
-                <h2>Player 2: Login for the Quiz!!</h2>
-                <label>username</label>
-                <input id="p2input" class="form-control" placeholder="Enter Player 2's Name">
-            </div>
+            <h4>Number 1</h4>
+            <input id="n1" placeholder="Number 1" class="form-control">
             <br>
-            <button type="button" class="btn btn-success" style="width: 33.5%" onclick="adduser()"> Login </button>
-        </center>
-        </body>
+            <h4>Number 2</h4>
+            <input id="n2" placeholder="Number 2" class="form-control">
+            <br>
+            <button class="btn-success" onclick="Send()" style="width: 30%">Send</button>
+            <br>
+            <br>
+            </center>
+        </div>
+    </body>
 </html>
